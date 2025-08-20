@@ -15,7 +15,7 @@ const Header = ({ setPage }) => {
             onClick={() => setPage('contact')}
             className="px-4 py-2 text-gentle-black hover:text-gray-600 transition-colors font-medium"
           >
-            Contact
+            Contact Us
           </button>
         </div>
       </div>

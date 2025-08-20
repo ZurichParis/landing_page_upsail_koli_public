@@ -1,33 +1,70 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = ({ setPage }) => {
-  const [email, setEmail] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    message: ''
+  });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setEmail('');
+    setIsLoading(true);
+    setError('');
+
+    // EmailJS configuration from environment variables
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+    // Check if environment variables are configured
+    if (!serviceId || !templateId || !publicKey) {
+      setError('Email service is not properly configured. Please contact support.');
+      setIsLoading(false);
+      return;
+    }
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      company: formData.company,
+      message: formData.message,
+    };
+
+    try {
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      setIsSubmitted(true);
+      setFormData({ name: '', email: '', company: '', message: '' });
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      setError('Failed to send message. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
-    <main className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+    <main className="min-h-screen bg-gradient-to-br from-lime/20 to-green-100">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[60vh]">
           <div className="space-y-8">
-            <button
-              onClick={() => setPage('home')}
-              className="flex items-center text-gray-600 hover:text-gentle-black transition-colors mb-8"
-            >
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              Back to Home
-            </button>
-            
+          
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gentle-black mb-6">
-                Join the Waitlist
+              <h1 className="text-4xl md:text-5xl font-bold text-gentle-black mb-6 leading-loose">
+                Scales your creator marketing with ease
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Be among the first to experience our revolutionary platform. We'll notify you as soon as we're ready to welcome you aboard.
@@ -63,7 +100,7 @@ const Contact = ({ setPage }) => {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
+            <div className="rounded-2xl shadow-xl p-8 w-full max-w-md bg-white">
               {!isSubmitted ? (
                 <>
                   <div className="text-center mb-8">
@@ -71,31 +108,76 @@ const Contact = ({ setPage }) => {
                       Get Early Access
                     </h2>
                     <p className="text-gray-600">
-                      Enter your email to join our exclusive waitlist
+                      Tell us about yourself and join our exclusive waitlist
                     </p>
                   </div>
 
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  {error && (
+                    <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg text-sm">
+                      {error}
+                    </div>
+                  )}
+
+                  <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gentle-black mb-2">
-                        Email Address
-                      </label>
+                      <input
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime focus:border-transparent outline-none transition-all duration-200"
+                        placeholder="Full Name"
+                      />
+                    </div>
+
+                    <div>
                       <input
                         type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime focus:border-transparent outline-none transition-all duration-200"
                         placeholder="your@email.com"
                       />
                     </div>
 
+                    <div>
+                      <input
+                        type="text"
+                        name="company"
+                        value={formData.company}
+                        onChange={handleInputChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime focus:border-transparent outline-none transition-all duration-200"
+                        placeholder="Company (optional)"
+                      />
+                    </div>
+
+                    <div>
+                      <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
+                        rows="3"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime focus:border-transparent outline-none transition-all duration-200 resize-none"
+                        placeholder="Tell us about your use case (optional)"
+                      />
+                    </div>
+
                     <button
                       type="submit"
-                      className="w-full bg-lime text-gentle-black py-3 px-4 rounded-lg font-semibold hover:bg-lime/90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+                      disabled={isLoading}
+                      className="w-full bg-lime text-gentle-black py-3 px-4 rounded-lg font-semibold hover:bg-lime/90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                     >
-                      Join Waitlist
+                      {isLoading ? (
+                        <div className="flex items-center justify-center">
+                          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-gentle-black mr-2"></div>
+                          Sending...
+                        </div>
+                      ) : (
+                        'Join Waitlist'
+                      )}
                     </button>
                   </form>
 
@@ -106,7 +188,7 @@ const Contact = ({ setPage }) => {
               ) : (
                 <div className="text-center py-8">
                   <div className="w-16 h-16 bg-lime/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-lime" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>

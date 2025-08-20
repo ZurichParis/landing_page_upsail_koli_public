@@ -5,11 +5,11 @@ const HowItWorks = () => {
 
   const steps = [
     {
-      title: "Sign Up & Onboard",
+      title: "Create Campaign ",
       shortDesc: "Get started in minutes",
-      fullDesc: "Create your account and complete our streamlined onboarding process. Our guided setup helps you configure your workspace and connect your existing tools in just a few clicks.",
+      fullDesc: "Chat with Koli to set up your campaign objectives, target audience, and content strategy.",
       illustration: (
-        <div className="w-full h-64 bg-gradient-to-br from-lime/20 to-green-100 rounded-xl flex items-center justify-center">
+        <div className="w-full h-full bg-gradient-to-br from-lime/20 to-green-100 rounded-xl flex items-center justify-center">
           <div className="text-center">
             <div className="w-16 h-16 mx-auto mb-4 bg-lime/40 rounded-full flex items-center justify-center">
               <svg className="w-8 h-8 text-gentle-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -22,11 +22,11 @@ const HowItWorks = () => {
       )
     },
     {
-      title: "Configure Your Workflow",
-      shortDesc: "Customize to your needs",
-      fullDesc: "Set up your custom workflows, automation rules, and team permissions. Our intelligent system learns from your preferences and suggests optimizations to maximize efficiency.",
+      title: "Select Creators Ready to Collaborate",
+      shortDesc: "You choose the vibe, we find the creators.",
+      fullDesc: "Browse vetted and negotiated creators at transparent prices. Let Koli analyze and compare candidates.",
       illustration: (
-        <div className="w-full h-64 bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center">
+        <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center">
           <div className="text-center">
             <div className="w-16 h-16 mx-auto mb-4 bg-blue-200 rounded-full flex items-center justify-center">
               <svg className="w-8 h-8 text-gentle-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,11 +40,11 @@ const HowItWorks = () => {
       )
     },
     {
-      title: "Launch & Scale",
-      shortDesc: "Go live and grow",
-      fullDesc: "Launch your optimized workflow and watch your productivity soar. Our platform scales with your business, providing real-time analytics and insights to help you make data-driven decisions.",
+      title: "Scale Viral Growth",
+      shortDesc: "Koli monitors your campaign performance in real-time.",
+      fullDesc: "View detailed metrics, surface viral content. Let Koli curate the next cohort of similar top-performing creators and viral content template to multiply virality.",
       illustration: (
-        <div className="w-full h-64 bg-gradient-to-br from-orange-100 to-red-100 rounded-xl flex items-center justify-center">
+        <div className="w-full h-full bg-gradient-to-br from-orange-100 to-red-100 rounded-xl flex items-center justify-center">
           <div className="text-center">
             <div className="w-16 h-16 mx-auto mb-4 bg-orange-200 rounded-full flex items-center justify-center">
               <svg className="w-8 h-8 text-gentle-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,21 +59,21 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gentle-black mb-4">
             How It Works
           </h2>
           <p className="text-xl text-gray-600">
-            Get up and running in three simple steps
+          Koli helps you connect with 420M+ creators across Instagram, Tiktok, YouTube and Linkedin, in a few clicks.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           <div className="space-y-4">
             {steps.map((step, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div key={index} className="bg-white rounded-lg overflow-hidden">
                 <button
                   onClick={() => setActiveStep(index)}
                   className={`w-full p-6 text-left transition-all duration-200 ${
@@ -111,8 +111,8 @@ const HowItWorks = () => {
             ))}
           </div>
 
-          <div className="lg:sticky lg:top-8">
-            <div className="transition-all duration-300">
+          <div className="w-full h-full">
+            <div className="transition-all duration-300 h-full w-full">
               {steps[activeStep].illustration}
             </div>
           </div>

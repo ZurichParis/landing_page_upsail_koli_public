@@ -8,10 +8,10 @@ const Hero = ({ setPage }) => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gentle-black leading-tight">
-                Transform Your Business with Modern Solutions
+              Turn creator marketing into a reliable growth machine.
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed max-w-xl">
-                Streamline your workflow, boost productivity, and unlock new possibilities with our innovative platform designed for the future.
+              Join the waitlist for early access to Koli — the AI vibe marketing platform designed to help founders and marketing leaders drive viral growth confidently, without the grind.
               </p>
             </div>
             <button

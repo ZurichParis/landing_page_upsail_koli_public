@@ -6,7 +6,7 @@ const Footer = ({ setPage }) => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-2xl font-bold text-gentle-black">
-            Upsail
+            Koli - Your AI Marketing Assistant
           </div>
           
           <div className="flex space-x-8">
@@ -35,7 +35,7 @@ const Footer = ({ setPage }) => {
         
         <div className="mt-8 pt-8 border-t border-gray-200 text-center">
           <p className="text-gray-500 text-sm">
-            © 2024 Upsail. All rights reserved.
+            © 2025 Upsail. All rights reserved.
           </p>
         </div>
       </div>
