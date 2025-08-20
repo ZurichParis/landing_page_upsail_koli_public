@@ -2,9 +2,9 @@ import React from 'react';
 
 const Hero = ({ setPage }) => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="bg-white">
+      <div className="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center justify-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gentle-black leading-tight">
@@ -21,8 +21,8 @@ const Hero = ({ setPage }) => {
               Join Waitlist
             </button>
           </div>
-          <div className="flex justify-center">
-            <div className="w-full max-w-md h-80 bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg">
+          <div className="flex justify-end">
+            <div className="w-full max-w-lg h-80 bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg">
               <div className="text-center text-gray-500">
                 <div className="w-16 h-16 mx-auto mb-4 bg-gray-300 rounded-full flex items-center justify-center">
                   <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
