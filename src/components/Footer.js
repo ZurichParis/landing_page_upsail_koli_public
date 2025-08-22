@@ -2,10 +2,6 @@ import React from 'react';
 
 const links = [
   {
-    label: 'Privacy Policy',
-    href: 'https://www.upsail.ai/privacy'
-  },
-  {
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/company/upsail-ai/'
   },
@@ -24,7 +20,11 @@ const links = [
   {
     label: 'YouTube',
     href: 'https://www.youtube.com/@upsail.ai'
-  }
+  },
+  {
+    label: 'Privacy Policy',
+    href: 'https://www.upsail.ai/privacy'
+  },
 ]
 
 const Footer = ({ setPage }) => {
@@ -35,15 +35,7 @@ const Footer = ({ setPage }) => {
           <div className="text-2xl font-bold text-gentle-black">
             Koli - The AI Vibe Marketer
           </div>
-          
-          <div className="flex space-x-8">
-            <button
-              onClick={() => setPage('contact')}
-              className="text-gray-600 hover:text-gentle-black transition-colors"
-            >
-              Contact Us
-            </button>
-          </div>
+
           <div className="flex space-x-8">
             {links.map((link) => (
               <a
@@ -56,6 +48,12 @@ const Footer = ({ setPage }) => {
                 {link.label}
               </a>
             ))}
+            <button
+              onClick={() => setPage('contact')}
+              className="text-gray-600 hover:text-gentle-black transition-colors"
+            >
+              Contact Us
+            </button>
           </div>
         </div>
         

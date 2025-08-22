@@ -9,6 +9,9 @@ module.exports = {
         'lime': '#BFFF00',
         'gentle-black': '#1F2937',
       },
+      fontFamily: {
+        'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif']
+      }
     },
   },
   plugins: [],
