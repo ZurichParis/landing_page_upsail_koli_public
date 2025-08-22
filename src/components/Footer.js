@@ -1,12 +1,39 @@
 import React from 'react';
 
+const links = [
+  {
+    label: 'Privacy Policy',
+    href: 'https://www.upsail.ai/privacy'
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/upsail-ai/'
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/upsail.ai/'
+  },
+  {
+    label: 'X',
+    href: 'https://x.com/upsail_ai'
+  },
+  {
+    label: 'TikTok',
+    href: 'https://www.tiktok.com/@upsail.ai'
+  },
+  {
+    label: 'YouTube',
+    href: 'https://www.youtube.com/@upsail.ai'
+  }
+]
+
 const Footer = ({ setPage }) => {
   return (
-    <footer className="bg-white border-t border-gray-200 py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-2xl font-bold text-gentle-black">
-            Koli - Your AI Marketing Assistant
+            Koli - The AI Vibe Marketer
           </div>
           
           <div className="flex space-x-8">
@@ -14,28 +41,27 @@ const Footer = ({ setPage }) => {
               onClick={() => setPage('contact')}
               className="text-gray-600 hover:text-gentle-black transition-colors"
             >
-              Contact
+              Contact Us
             </button>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-gentle-black transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gentle-black transition-colors"
-            >
-              LinkedIn
-            </a>
+          </div>
+          <div className="flex space-x-8">
+            {links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gentle-black transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-gray-200 text-center">
+        <div className="mt-8 pt-8 text-center">
           <p className="text-gray-500 text-sm">
-            © 2025 Upsail. All rights reserved.
+            © 2025 Upsail AI. All rights reserved.
           </p>
         </div>
       </div>

@@ -4,19 +4,20 @@ const Solution = () => {
   const solutions = [
     {
 
-      title: "20x Faster",
-      subtitle: "Activation",
+      title: "20x",
+      subtitle: "Faster Activation",
       description: "Get creator content live in days, not months."
     },
     {
 
-      title: "10x ROI",
+      title: "10x",
+      subtitle: "ROI",
       description: "Meet business goals faster with the right content, creators, and execution."
     },
     {
 
-      title: "0 Extra",
-      subtitle: "Headcount cost",
+      title: "0",
+      subtitle: "Extra Headcount",
       description: "Outsource creator marketing ops to Koli AI agents."
     }
   ];
@@ -25,28 +26,28 @@ const Solution = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gentle-black mb-8">
-            Why Koli?
+          <h2 className="text-3xl md:text-5xl text-gentle-black mb-8">
+          Creator marketing ops automated, built for speed and ROI
           </h2>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-7xl mx-auto">
-          Koli flips the script. AI agents handle everything from creative direction and creator sourcing to outreach and campaign management.<br/> So you can launch faster, scale smarter, and see results — all without adding headcount.
-          </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {solutions.map((solution, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-              {/* Upper section with light transient color and title */}
-              <div className="bg-gradient-to-br from-lime/20 to-green-100 h-40 p-8 text-center flex flex-col items-center justify-center space-y-4">
-                <h3 className="font-semibold text-gentle-black font-bold text-4xl">
-                  {solution.title}
-                </h3>
-                <h3 className="font-semibold text-gentle-black font-bold text-4xl">
-                  {solution.subtitle}
-                </h3>
-              </div>
-              {/* Lower section with white background and description */}
-              <div className="bg-white p-8">
-                <p className="text-gray-600 leading-relaxed text-xl">
+            <div 
+              key={index} 
+              className="bg-black rounded-xl min-h-[20vh] border-l-4 border-[#7ED321] hover:border-[#7ED321] transition-all duration-500 overflow-hidden transform hover:-translate-y-2"
+            >
+              {/* Main content section */}
+              <div className="p-8 space-y-6">
+                {/* Title with two parts */}
+                <div className="space-y-2">
+                  <h3 className="text-3xl">
+                    <span className="text-[#7ED321]">{solution.title}</span>
+                    <span className="text-[#DCDCDC]"> {solution.subtitle}</span>
+                  </h3>
+                </div>
+                
+                {/* Description */}
+                <p className="text-[#ADADAD] leading-relaxed text-lg">
                   {solution.description}
                 </p>
               </div>
