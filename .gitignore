@@ -31,3 +31,14 @@ yarn-error.log*
 
 # OS generated files
 Thumbs.db
+
+# git, png, video, etc.
+*.git
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mov
+*.avi
+*.mkv
