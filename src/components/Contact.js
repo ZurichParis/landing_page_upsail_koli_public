@@ -64,10 +64,10 @@ const Contact = ({ setPage }) => {
           
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gentle-black mb-6 leading-loose">
-                Scales your creator marketing with ease
+                Turn Creator Marketing into Repeatable Success
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Be among the first to experience our revolutionary platform. We'll notify you as soon as we're ready to welcome you aboard.
+                Be among the first to hire the first vibe creator marketer. We’ll notify you as soon as we’re ready to welcome you aboard.
               </p>
             </div>
 
