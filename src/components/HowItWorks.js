@@ -8,12 +8,25 @@ const HowItWorks = () => {
       shortDesc: "Chat with Emily to launch campaign in minutes. ",
       fullDesc: "No more keyword hunts, hashtag searches, or sifting through 50+ nonsense categories. Just chat in your own words—like you’re talking to a creator marketing pro.",
       illustration: (
-        <div className="w-full h-full rounded-xl">
-          <img 
-            src="/Scene-1.gif" 
-            alt="Create Campaign illustration"
-            className="w-full h-full object-contain rounded-xl"
-          />
+        <div className="w-full h-full rounded-xl overflow-hidden">
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            controls // Add this temporarily to see if video loads
+            preload="auto"
+            className="w-full h-full object-cover rounded-xl"
+            style={{ 
+              width: '100%',
+              height: '101%',
+              objectFit: 'cover'
+              
+            }}
+          >
+            <source src="howitworks1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       )
     },
@@ -22,12 +35,25 @@ const HowItWorks = () => {
       shortDesc: "Skip search and outreach, find creators already ready to collaborate with you.",
       fullDesc: "Come back to a shortlist of creators, already vetted and negotiated at transparent prices. Chat with Emily to analyze and compare candidates ready to collaborate. No more juggling emails, DMs, search tools, CRMs, and spreadsheets, and losing track along the way. Need a quick answer on a creator? Just ask Emily.",
       illustration: (
-        <div className="w-full h-full rounded-xl">
-          <img 
-            src="/Scene-2.gif" 
-            alt="Select Creators illustration"
-            className="w-full h-full object-contain rounded-xl"
-          />
+        <div className="w-full h-full rounded-xl overflow-hidden">
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            controls // Add this temporarily to see if video loads
+            preload="auto"
+            className="w-full h-full object-cover rounded-xl"
+            style={{ 
+              width: '100%',
+              height: '101%',
+              marginTop: '-1%',
+              objectFit: 'cover'
+            }}
+          >
+            <source src="howitworks2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       )
     },
@@ -37,11 +63,18 @@ const HowItWorks = () => {
       fullDesc: "No more missing signals when it’s too late. Emily gives you real insights from creator content and engagement, curates the next cohort of top-performing creators, and builds viral content templates to multiply your reach.",
       illustration: (
         <div className="w-full h-full rounded-xl">
-          <img 
-            src="/Scene-3.gif" 
-            alt="Scale Viral Growth illustration"
-            className="w-full h-full object-contain rounded-xl"
-          />
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            controls // Add this temporarily to see if video loads
+            preload="auto"
+            className="w-full h-full object-cover rounded-xl"
+          >
+            <source src="howitworks3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       )
     }
