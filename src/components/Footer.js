@@ -37,17 +37,6 @@ const Footer = ({ setPage }) => {
           </div>
 
           <div className="flex space-x-8">
-            {links.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gentle-black transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
             <button
               onClick={() => setPage('contact')}
               className="text-gray-600 hover:text-gentle-black transition-colors"
@@ -59,7 +48,7 @@ const Footer = ({ setPage }) => {
         
         <div className="mt-8 pt-8 text-center">
           <p className="text-gray-500 text-sm">
-            © 2025 Upsail AI. All rights reserved.
+            © 2025 Koli. All rights reserved.
           </p>
         </div>
       </div>

@@ -6,33 +6,45 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Sarah Chen",
-      role: "Product Manager",
-      feedback: "This platform completely transformed our workflow. We've seen a 40% increase in productivity since implementation.",
+      role: "Founder",
+      company: "ai saas",
+      feedback: "I thought I needed to hire a vibe marketer. Now I’ll probably try Koli first.",
       avatar: "SC"
     },
     {
       name: "Michael Rodriguez",
-      role: "CTO",
-      feedback: "The integration was seamless and the support team is exceptional. Highly recommend for any growing business.",
+      role: "Marketing Lead",
+      company: "saas startup",
+      feedback: "Every influencer tool I’ve seen only solves a small part of the puzzle. Nothing actually automates the grind. Koli is the first platform I’ve seen that could finally make creator marketing scalable.",
       avatar: "MR"
     },
     {
       name: "Emma Thompson",
-      role: "Operations Director",
-      feedback: "Outstanding platform with incredible features. It's exactly what we needed to scale our marketing efficiently.",
+      role: "VP Growth",
+      company: "e-commerce brand",
+      feedback: "As a founder, I don’t want another dashboard. I want results. Koli feels like the product we’ve been waiting for—an AI campaign manager that does the heavy lifting.",
       avatar: "ET"
     },
     {
       name: "David Park",
       role: "Founder",
-      feedback: "Game-changing solution! The analytics and insights have helped us make better decisions faster than ever before.",
+      company: "beauty brand",
+      feedback: "The promise of Koli is huge. If it really delivers on automating sourcing, outreach, and performance insights, this could replace half the tools we juggle today.",
       avatar: "DP"
     },
     {
       name: "Lisa Wang",
-      role: "VP Engineering",
-      feedback: "Reliable, fast, and user-friendly. Our team adopted it immediately and we couldn't be happier with the results.",
+      role: "CMO",
+      company: "health & lifestyle brand",
+      feedback: "Influencer platforms are everywhere, but they all require tons of manual work. Koli is the first idea that actually treats creator marketing like a repeatable growth engine. I can’t wait to try it.",
       avatar: "LW"
+    },
+    {
+      name: "Lucas C",
+      role: "Founder",
+      company: "consumer startup ",
+      feedback: "Koli feels like it should have existed yesterday. No tool I’ve seen brings creators, campaigns, and insights into one place with AI running the ops.",
+      avatar: "LC"
     }
   ];
 
@@ -55,7 +67,7 @@ const Testimonials = () => {
       scrollContainer.scrollLeft = scrollPosition;
     };
 
-    const interval = setInterval(scroll, 30);
+    const interval = setInterval(scroll, 50);
 
     return () => clearInterval(interval);
   }, [testimonials.length]);
@@ -64,11 +76,11 @@ const Testimonials = () => {
     <section className="py-20 bg-white">
       <div className="mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl text-gentle-black mb-4">
-            What Our Beta Users Say
+          <h2 className="font-medium text-[64px] leading-[75px] text-gentle-black text-center mb-6">
+            What early supporters are saying 
           </h2>
-          <p className="text-xl text-gray-600">
-            Join hundreds of satisfied customers who have transformed their business
+          <p className="font-medium text-[20px] leading-[28px] text-gray-600 mx-auto max-w-4xl">
+            Why our community can’t wait for Koli
           </p>
         </div>
         
@@ -93,11 +105,8 @@ const Testimonials = () => {
                 {/* Author info at bottom right */}
                 <div className="absolute bottom-0 right-0 p-6 flex items-center">
                   <div className="text-right mr-3">
-                    <h4 className="font-semibold text-gentle-black text-sm">{testimonial.name}</h4>
-                    <p className="text-xs text-gray-600">{testimonial.role}</p>
-                  </div>
-                  <div className="w-12 h-12 bg-lime/20 rounded-full flex items-center justify-center text-gentle-black font-semibold flex-shrink-0">
-                    {testimonial.avatar}
+                    <h4 className="font-semibold text-gentle-black text-sm">{testimonial.role}</h4>
+                    <p className="text-xs text-gray-600">{testimonial.company}</p>
                   </div>
                 </div>
               </div>

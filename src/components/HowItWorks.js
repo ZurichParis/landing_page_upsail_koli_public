@@ -8,25 +8,19 @@ const HowItWorks = () => {
       shortDesc: "Chat with Emily to launch campaign in minutes. ",
       fullDesc: "No more keyword hunts, hashtag searches, or sifting through 50+ nonsense categories. Just chat in your own words—like you’re talking to a creator marketing pro.",
       illustration: (
-        <div className="w-full h-full rounded-xl overflow-hidden">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            controls // Add this temporarily to see if video loads
-            preload="auto"
-            className="w-full h-full object-cover rounded-xl"
+        <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
+          <img 
+            src="howitworks1.gif"
+            alt="How it works illustration 1"
+            className="w-full h-full object-cover rounded-xl transition-opacity duration-300"
             style={{ 
               width: '100%',
               height: '101%',
               objectFit: 'cover'
-              
             }}
-          >
-            <source src="howitworks1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       )
     },
@@ -35,25 +29,19 @@ const HowItWorks = () => {
       shortDesc: "Skip search and outreach, find creators already ready to collaborate with you.",
       fullDesc: "Come back to a shortlist of creators, already vetted and negotiated at transparent prices. Chat with Emily to analyze and compare candidates ready to collaborate. No more juggling emails, DMs, search tools, CRMs, and spreadsheets, and losing track along the way. Need a quick answer on a creator? Just ask Emily.",
       illustration: (
-        <div className="w-full h-full rounded-xl overflow-hidden">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            controls // Add this temporarily to see if video loads
-            preload="auto"
-            className="w-full h-full object-cover rounded-xl"
+        <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
+          <img 
+            src="howitworks2.gif"
+            alt="How it works illustration 2"
+            className="w-full h-full object-cover rounded-xl transition-opacity duration-300"
             style={{ 
               width: '100%',
               height: '101%',
-              marginTop: '-1%',
               objectFit: 'cover'
             }}
-          >
-            <source src="howitworks2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       )
     },
@@ -62,19 +50,19 @@ const HowItWorks = () => {
       shortDesc: "Take going viral from luck to repeatable success.",
       fullDesc: "No more missing signals when it’s too late. Emily gives you real insights from creator content and engagement, curates the next cohort of top-performing creators, and builds viral content templates to multiply your reach.",
       illustration: (
-        <div className="w-full h-full rounded-xl">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            controls // Add this temporarily to see if video loads
-            preload="auto"
-            className="w-full h-full object-cover rounded-xl"
-          >
-            <source src="howitworks3.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
+          <img 
+            src="howitworks3.gif"
+            alt="How it works illustration"
+            className="w-full h-full object-cover rounded-xl transition-opacity duration-300"
+            style={{ 
+              width: '100%',
+              height: '101%',
+              objectFit: 'cover'
+            }}
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       )
     }
@@ -84,10 +72,10 @@ const HowItWorks = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl text-gentle-black mb-4">
-            How It Works
+          <h2 className="font-medium text-[64px] leading-[75px] text-gentle-black mb-6">
+            How it works
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="font-medium text-[20px] leading-[28px] text-gray-600 mx-auto max-w-4xl">
           Meet Emily, your Koli campaign assistant. From sourcing creators to shaping strategy—done in just a few chats.
           </p>
         </div>

@@ -7,10 +7,10 @@ const FinalCTA = ({ setPage }) => {
         <div className="h-40 w-40 mx-auto mb-6">
           <img src="/logo.png" alt="Emily" className="w-full h-full object-contain rounded-xl" />
         </div>
-        <h2 className="text-3xl md:text-4xl lg:text-7xl mx-auto mb-6">
+        <h2 className="font-medium text-[64px] leading-[75px] text-gentle-black text-center mb-6">
         Activate your growth machine. 
         </h2>
-        <p className="text-xl text-[#6B7280] mb-8 max-w-2xl mx-auto">
+        <p className="font-medium text-[20px] leading-[28px] text-gray-600 mx-auto max-w-4xl mb-6">
         Koli is building the AI vibe marketing for everyone to reach their audience and get the attention they deserve.
         </p>
         <button
