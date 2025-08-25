@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Hero = ({ setPage }) => {
+const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className="bg-white">
       <div className="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
@@ -19,7 +21,7 @@ const Hero = ({ setPage }) => {
               </p>
             </div>
             <button
-              onClick={() => setPage('contact')}
+              onClick={() => navigate('/contact')}
               className="custom-green-gradient text-white px-10 py-2 rounded-full text-lg font-medium text-[20px] hover:opacity-90 hover:brightness-110 transition-all duration-500 ease-out shadow-lg hover:shadow-2xl hover:shadow-green-500/30 transform hover:-translate-y-1 hover:scale-105"
             >
               Join Waitlist

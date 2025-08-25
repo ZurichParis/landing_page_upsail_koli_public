@@ -27,7 +27,9 @@ import React from 'react';
 //   },
 // ]
 
-const Footer = ({ setPage }) => {
+import { Link } from 'react-router-dom';
+
+const Footer = () => {
   return (
     <footer className="bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -37,12 +39,12 @@ const Footer = ({ setPage }) => {
           </div>
 
           <div className="flex space-x-8">
-            <button
-              onClick={() => setPage('contact')}
+            <Link
+              to="/contact"
               className="text-gray-600 hover:text-gentle-black transition-colors"
             >
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
         

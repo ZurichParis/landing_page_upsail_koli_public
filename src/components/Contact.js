@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
-const Contact = ({ setPage }) => {
+const Contact = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -200,7 +202,7 @@ const Contact = ({ setPage }) => {
                     Thank you for joining our waitlist. We'll be in touch soon with exciting updates!
                   </p>
                   <button
-                    onClick={() => setPage('home')}
+                    onClick={() => navigate('/')}
                     className="text-lime hover:text-lime/80 font-medium transition-colors"
                   >
                     Return to Home

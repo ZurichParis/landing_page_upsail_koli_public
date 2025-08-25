@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const FinalCTA = ({ setPage }) => {
+const FinalCTA = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-5 md:py-20 px-4 sm:px-6 lg:px-8 text-gentle-black">
       <div className="max-w-7xl mx-auto text-center">
@@ -14,7 +16,7 @@ const FinalCTA = ({ setPage }) => {
         Koli is building AI vibe marketing for everyone to reach their audience and get the attention they deserve.
         </p>
         <button
-          onClick={() => setPage('contact')}
+          onClick={() => navigate('/contact')}
           className="custom-green-gradient text-white px-10 py-2 rounded-full text-lg font-semibold hover:opacity-90 hover:brightness-110 transition-all duration-500 ease-out shadow-lg hover:shadow-2xl hover:shadow-green-500/30 transform hover:-translate-y-1 hover:scale-105"
         >
           Join Waitlist

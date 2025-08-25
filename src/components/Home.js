@@ -6,15 +6,15 @@ import Testimonials from './Testimonials';
 import HowItWorks from './HowItWorks';
 import FinalCTA from './FinalCTA';
 
-const Home = ({ setPage }) => {
+const Home = () => {
   return (
     <main>
-      <Hero setPage={setPage} />
+      <Hero />
       <Problem />
       <Solution />
       <Testimonials />
       <HowItWorks />
-      <FinalCTA setPage={setPage} />
+      <FinalCTA />
     </main>
   );
 };
