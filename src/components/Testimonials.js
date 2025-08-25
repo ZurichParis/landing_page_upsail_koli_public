@@ -7,28 +7,21 @@ const Testimonials = () => {
     {
       name: "Sarah Chen",
       role: "Founder",
-      company: "ai saas",
+      company: "AI SaaS",
       feedback: "I thought I needed to hire a vibe marketer. Now I’ll probably try Koli first.",
       avatar: "SC"
     },
     {
-      name: "Michael Rodriguez",
-      role: "Marketing Lead",
-      company: "saas startup",
-      feedback: "Every influencer tool I’ve seen only solves a small part of the puzzle. Nothing actually automates the grind. Koli is the first platform I’ve seen that could finally make creator marketing scalable.",
-      avatar: "MR"
-    },
-    {
       name: "Emma Thompson",
-      role: "VP Growth",
-      company: "e-commerce brand",
+      role: "Founder",
+      company: "consumer app",
       feedback: "As a founder, I don’t want another dashboard. I want results. Koli feels like the product we’ve been waiting for—an AI campaign manager that does the heavy lifting.",
       avatar: "ET"
     },
     {
       name: "David Park",
-      role: "Founder",
-      company: "beauty brand",
+      role: "VP Growth",
+      company: "e-commerce brand",
       feedback: "The promise of Koli is huge. If it really delivers on automating sourcing, outreach, and performance insights, this could replace half the tools we juggle today.",
       avatar: "DP"
     },
@@ -41,8 +34,8 @@ const Testimonials = () => {
     },
     {
       name: "Lucas C",
-      role: "Founder",
-      company: "consumer startup ",
+      role: "Head of Growth",
+      company: "consumer AI startup",
       feedback: "Koli feels like it should have existed yesterday. No tool I’ve seen brings creators, campaigns, and insights into one place with AI running the ops.",
       avatar: "LC"
     }
