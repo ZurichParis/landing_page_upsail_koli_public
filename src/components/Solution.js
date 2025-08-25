@@ -25,9 +25,9 @@ const Solution = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="font-medium text-[64px] leading-[75px] text-gentle-black text-center">
-          <h2 className="mb-4">Creator marketing ops automated,</h2>
-          <h2>built for speed and ROI</h2>
+        <div className="font-medium text-[32px] md:text-[64px] leading-[38px] md:leading-[75px] text-gentle-black mb-6 text-center">
+          <h2 className="md:block inline">Creator marketing ops automated,</h2>
+          <h2 className="md:block inline">built for speed and ROI</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           {solutions.map((solution, index) => (

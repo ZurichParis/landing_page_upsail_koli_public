@@ -11,10 +11,10 @@ const Hero = ({ setPage }) => {
                 <div className="bg-black text-white rounded-full px-4 py-2">New</div>
                 <div className="bg-transparent px-2 py-2">Creator-first growth engine</div>
               </div>
-              <h1 className="font-medium text-[64px] leading-[75px] text-gentle-black mb-6">
+              <h1 className="font-medium text-[32px] md:text-[64px] leading-[38px] md:leading-[75px] text-gentle-black mb-6">
               The AI vibe marketer < br/> for creator collabs.
               </h1>
-              <p className="font-medium text-[20px] leading-[28px] text-gray-600 mx-auto max-w-4xl">
+              <p className="font-medium text-[16px] md:text-[20px] leading-[22px] md:leading-[28px] text-gray-600 mx-auto max-w-4xl px-4">
               Koli AI agents do the grind of creator marketing, so founders and marketing leaders can focus on driving growth with confidence. Join the waitlist for early access.
               </p>
             </div>
@@ -26,7 +26,7 @@ const Hero = ({ setPage }) => {
             </button>
           </div>
           <div className="flex justify-center mt-10">
-          <div className="w-full max-w-5xl h-[60vh] bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
+          <div className="w-full max-w-5xl min-h-[60vh] bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
             <video 
               className="w-full h-full object-cover rounded-2xl"
               controls
@@ -34,7 +34,7 @@ const Hero = ({ setPage }) => {
               muted
               loop
             >
-              <source src="herovideo.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dswailmr0/video/upload/v1756136068/herovideo_lkmpvr.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

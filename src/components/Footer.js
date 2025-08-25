@@ -1,31 +1,31 @@
 import React from 'react';
 
-const links = [
-  {
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/company/upsail-ai/'
-  },
-  {
-    label: 'Instagram',
-    href: 'https://www.instagram.com/upsail.ai/'
-  },
-  {
-    label: 'X',
-    href: 'https://x.com/upsail_ai'
-  },
-  {
-    label: 'TikTok',
-    href: 'https://www.tiktok.com/@upsail.ai'
-  },
-  {
-    label: 'YouTube',
-    href: 'https://www.youtube.com/@upsail.ai'
-  },
-  {
-    label: 'Privacy Policy',
-    href: 'https://www.upsail.ai/privacy'
-  },
-]
+// const links = [
+//   {
+//     label: 'LinkedIn',
+//     href: 'https://www.linkedin.com/company/upsail-ai/'
+//   },
+//   {
+//     label: 'Instagram',
+//     href: 'https://www.instagram.com/upsail.ai/'
+//   },
+//   {
+//     label: 'X',
+//     href: 'https://x.com/upsail_ai'
+//   },
+//   {
+//     label: 'TikTok',
+//     href: 'https://www.tiktok.com/@upsail.ai'
+//   },
+//   {
+//     label: 'YouTube',
+//     href: 'https://www.youtube.com/@upsail.ai'
+//   },
+//   {
+//     label: 'Privacy Policy',
+//     href: 'https://www.upsail.ai/privacy'
+//   },
+// ]
 
 const Footer = ({ setPage }) => {
   return (

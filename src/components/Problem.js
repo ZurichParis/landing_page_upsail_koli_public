@@ -95,10 +95,10 @@ const Problem = () => {
   };
 
   return (
-    <section ref={sectionRef} className="bg-white py-20">
+    <section ref={sectionRef} className="bg-white py-5 md: py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <div className="text-2xl md:text-3xl lg:text-4xl leading-relaxed">
+          <div className="text-xl leading-tight md:text-4xl md:leading-relaxed">
             {problemParagraphs.map((paragraph, paragraphIndex) => {
               // Calculate starting word index for this paragraph
               let startingWordIndex = 0;

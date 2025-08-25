@@ -76,10 +76,10 @@ const Testimonials = () => {
     <section className="py-20 bg-white">
       <div className="mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-medium text-[64px] leading-[75px] text-gentle-black text-center mb-6">
+          <h2 className="font-medium text-[32px] md:text-[64px] leading-[38px] md:leading-[75px] text-gentle-black mb-6">
             What early supporters are saying 
           </h2>
-          <p className="font-medium text-[20px] leading-[28px] text-gray-600 mx-auto max-w-4xl">
+          <p className="font-medium text-[16px] md:text-[20px] leading-[22px] md:leading-[28px] text-gray-600 mx-auto max-w-4xl px-4">
             Why our community can’t wait for Koli
           </p>
         </div>

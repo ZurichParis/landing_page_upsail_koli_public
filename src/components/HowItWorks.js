@@ -10,7 +10,7 @@ const HowItWorks = () => {
       illustration: (
         <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
           <img 
-            src="howitworks1.gif"
+            src="https://res.cloudinary.com/dswailmr0/image/upload/v1756136069/howitworks1_lgrsbg.gif"
             alt="How it works illustration 1"
             className="w-full h-full object-cover rounded-xl transition-opacity duration-300"
             style={{ 
@@ -31,7 +31,7 @@ const HowItWorks = () => {
       illustration: (
         <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
           <img 
-            src="howitworks2.gif"
+            src="https://res.cloudinary.com/dswailmr0/image/upload/v1756136069/howitworks2_ruzvup.gif"
             alt="How it works illustration 2"
             className="w-full h-full object-cover rounded-xl transition-opacity duration-300"
             style={{ 
@@ -52,7 +52,7 @@ const HowItWorks = () => {
       illustration: (
         <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
           <img 
-            src="howitworks3.gif"
+            src="https://res.cloudinary.com/dswailmr0/image/upload/v1756136070/howitworks3_no7fav.gif"
             alt="How it works illustration"
             className="w-full h-full object-cover rounded-xl transition-opacity duration-300"
             style={{ 
@@ -72,43 +72,43 @@ const HowItWorks = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-medium text-[64px] leading-[75px] text-gentle-black mb-6">
+          <h2 className="font-medium text-[32px] md:text-[64px] leading-[38px] md:leading-[75px] text-gentle-black mb-6">
             How it works
           </h2>
-          <p className="font-medium text-[20px] leading-[28px] text-gray-600 mx-auto max-w-4xl">
-          Meet Emily, your Koli campaign assistant. From sourcing creators to shaping strategy—done in just a few chats.
+          <p className="font-medium text-[16px] md:text-[20px] leading-[22px] md:leading-[28px] text-gray-600 mx-auto max-w-4xl px-4">
+            Meet Emily, your Koli campaign assistant. From sourcing creators to shaping strategy—done in just a few chats.
           </p>
         </div>
 
-        <div className="space-y-20 max-w-5xl mx-auto">
+        <div className="space-y-12 md:space-y-20 max-w-5xl mx-auto px-4">
           {steps.map((step, index) => (
-            <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-1 items-stretch ${
+            <div key={index} className={`grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 ${
               index === 1 ? 'lg:grid-flow-col-dense' : ''
             }`}>
               {/* Text Content */}
-              <div className={`w-full h-96 py-2 px-4 mx-2 lg:mx-4 flex flex-col justify-start ${
+              <div className={`w-full min-h-[350px] md:min-h-[450px] py-4 px-2 md:px-4 flex flex-col justify-start ${
                 index === 1 ? 'lg:col-start-2' : ''
               }`}>
-                <div className="flex mb-4 pb-2 pl-4">
-                  <h3 className="text-lg font-bold text-[#4A7C00] leading-loose">
+                <div className="flex mb-4 pb-2 pl-2 md:pl-4">
+                  <h3 className="text-base md:text-lg font-bold text-[#4A7C00] leading-loose">
                     {step.title}
                   </h3>
                 </div>
-                <div className="flex items-center mb-4 pb-2 pl-4">
-                  <h3 className="text-3xl font-semibold text-gentle-black leading-tight">
+                <div className="flex items-center mb-4 pb-2 pl-2 md:pl-4">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-gentle-black leading-tight">
                     {step.shortDesc}
                   </h3>
                 </div>
-                <p className="text-[#6B7280] leading-relaxed mb-4 pb-2 p-4 text-lg">
+                <p className="text-[#6B7280] leading-relaxed mb-4 pb-2 p-2 md:p-4 text-base md:text-lg">
                   {step.fullDesc}
                 </p>
               </div>
 
-              {/* Illustration */}
-              <div className={`w-64 sm:w-80 md:w-96 lg:w-[400px] xl:w-[500px] h-auto flex items-center justify-center mx-auto ${
+              {/* Video/GIF Section */}
+              <div className={`w-full h-[300px] md:h-[450px] flex items-center justify-center mx-auto ${
                 index === 1 ? 'lg:col-start-1' : ''
               }`}>
-                <div className="w-full h-full max-w-md">
+                <div className="w-full h-full max-w-lg">
                   {step.illustration}
                 </div>
               </div>

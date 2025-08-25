@@ -2,15 +2,15 @@ import React from 'react';
 
 const FinalCTA = ({ setPage }) => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 text-gentle-black">
+    <section className="py-5 md:py-20 px-4 sm:px-6 lg:px-8 text-gentle-black">
       <div className="max-w-7xl mx-auto text-center">
         <div className="h-40 w-40 mx-auto mb-6">
-          <img src="/logo.png" alt="Emily" className="w-full h-full object-contain rounded-xl" />
+          <img src="https://res.cloudinary.com/dswailmr0/image/upload/v1756135413/logo_to46ts.png" alt="Emily" className="w-full h-full object-contain rounded-xl" />
         </div>
-        <h2 className="font-medium text-[64px] leading-[75px] text-gentle-black text-center mb-6">
+        <h2 className="font-medium text-[32px] md:text-[64px] leading-[38px] md:leading-[75px] text-gentle-black mb-6">
         Activate your growth machine. 
         </h2>
-        <p className="font-medium text-[20px] leading-[28px] text-gray-600 mx-auto max-w-4xl mb-6">
+        <p className="font-medium text-[16px] md:text-[20px] leading-[22px] md:leading-[28px] text-gray-600 mx-auto max-w-4xl px-4 mb-3 md:mb-6">
         Koli is building the AI vibe marketing for everyone to reach their audience and get the attention they deserve.
         </p>
         <button

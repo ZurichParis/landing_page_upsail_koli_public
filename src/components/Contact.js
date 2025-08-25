@@ -42,6 +42,7 @@ const Contact = ({ setPage }) => {
       from_email: formData.email,
       company: formData.company,
       message: formData.message,
+      to_email: process.env.REACT_APP_COMPANY_EMAIL || 'your-email@example.com'
     };
 
     try {
@@ -63,7 +64,7 @@ const Contact = ({ setPage }) => {
           <div className="space-y-8">
           
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gentle-black mb-6 leading-loose">
+              <h1 className="font-medium text-[32px] md:text-[64px] leading-[38px] md:leading-[75px] text-gentle-black mb-6">
                 Turn Creator Marketing into Repeatable Success
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
