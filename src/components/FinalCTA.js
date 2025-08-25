@@ -11,7 +11,7 @@ const FinalCTA = ({ setPage }) => {
         Activate your growth machine. 
         </h2>
         <p className="font-medium text-[16px] md:text-[20px] leading-[22px] md:leading-[28px] text-gray-600 mx-auto max-w-4xl px-4 mb-3 md:mb-6">
-        Koli is building the AI vibe marketing for everyone to reach their audience and get the attention they deserve.
+        Koli is building AI vibe marketing for everyone to reach their audience and get the attention they deserve.
         </p>
         <button
           onClick={() => setPage('contact')}

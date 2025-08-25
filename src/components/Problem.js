@@ -53,13 +53,13 @@ const Problem = () => {
   // Define words to highlight with specific colors
   const highlightWords = {
     'Koli': '#79B939', // bright blue
-    'growth': '#E635A3', // emerald green  
-    'scale': '#10B981', // emerald green
+    'growth': '#A3E635', // emerald green  
+    'scale': '#E635A3', // emerald green
     'viral': '#35A3E6', // cyan
     'AI': '#79B939', // blue
-    'smarter': '#10B981', // emerald green
-    'launch': '#06B6D4', // cyan
-    'faster': '#3B82F6' // cyan
+    'smarter': '#A3E635', // emerald green
+    'launch': '#35A3E6', // cyan
+    'faster': '#35A3E6' // cyan
   };
 
   // Calculate opacity for each word based on scroll progress
