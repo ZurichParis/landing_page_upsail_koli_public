@@ -10,7 +10,7 @@ const HowItWorks = () => {
       illustration: (
         <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
           <img 
-            src="https://res.cloudinary.com/dswailmr0/image/upload/v1756136069/howitworks1_lgrsbg.gif"
+            src="https://i.ibb.co/DPL5tygC/howitworks1.gif"
             alt="How it works illustration 1"
             className="w-full h-full object-cover rounded-xl transition-opacity duration-300"
             style={{ 
@@ -31,7 +31,7 @@ const HowItWorks = () => {
       illustration: (
         <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
           <img 
-            src="https://res.cloudinary.com/dswailmr0/image/upload/v1756136069/howitworks2_ruzvup.gif"
+            src="https://i.ibb.co/bgZ3n5sc/howitworks2.gif"
             alt="How it works illustration 2"
             className="w-full h-full object-cover rounded-xl transition-opacity duration-300"
             style={{ 
@@ -52,7 +52,7 @@ const HowItWorks = () => {
       illustration: (
         <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
           <img 
-            src="https://res.cloudinary.com/dswailmr0/image/upload/v1756136070/howitworks3_no7fav.gif"
+            src="https://i.ibb.co/j9Z43gDs/howitworks3.gif"
             alt="How it works illustration"
             className="w-full h-full object-cover rounded-xl transition-opacity duration-300"
             style={{ 
