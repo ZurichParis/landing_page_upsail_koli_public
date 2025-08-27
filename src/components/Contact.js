@@ -60,7 +60,7 @@ const Contact = () => {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-lime/20 to-green-100">
+    <main className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[60vh]">
           <div className="space-y-8">
