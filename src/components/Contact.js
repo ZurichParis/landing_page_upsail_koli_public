@@ -117,7 +117,7 @@ const Contact = () => {
           Koli 
         </button>
       </div>
-      <div className="flex items-center justify-center pt-4">
+      <div className="flex items-center justify-center p-4">
         <div className="w-full max-w-5xl">
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
             <div className="flex flex-col lg:flex-row min-h-[600px]">
