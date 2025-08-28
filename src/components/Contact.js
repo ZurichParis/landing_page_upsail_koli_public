@@ -112,8 +112,12 @@ const Contact = () => {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#FCFCF9] to-[#F5F5F2]">
-      <h1 className='mx-auto font-[900] text-[28px] p-4 text-center'> Koli </h1>
-      <div className="flex items-center justify-center pt-16">
+      <div className="flex justify-center py-4">
+        <button onClick={() => navigate('/')} className='font-[900] text-[28px] p-4'> 
+          Koli 
+        </button>
+      </div>
+      <div className="flex items-center justify-center pt-4">
         <div className="w-full max-w-5xl">
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
             <div className="flex flex-col lg:flex-row min-h-[600px]">
@@ -122,11 +126,11 @@ const Contact = () => {
                 {!isSubmitted ? (
                   <>
                     <div className="mb-3">
-                      <p className="text-3xl font-bold text-[#D59B65]">
+                      <p className="font-[700] text-[18px] text-[#4A7C00]">
                         Join waitlist
                       </p>
-                      <p className="text-gray-500 font-[200] text-[16px] py-4">
-                        Be among the first to hire the vibe creator.
+                      <p className="text-[#0A0A0A] font-[500] text-[26px] py-4">
+                        Be among the first to hire the vibe creator marketer.
                       </p>
                     </div>
 
@@ -138,7 +142,7 @@ const Contact = () => {
 
                     <form onSubmit={handleSubmit} className="space-y-3">
                       <div>
-                        <label className="block font-[400] text-[16px] text-gray-700 mb-2">
+                        <label className="block font-[400] text-[16px] text-[#6B7280] mb-2">
                           Full Name
                         </label>
                         <input
@@ -153,7 +157,7 @@ const Contact = () => {
                       </div>
 
                       <div>
-                        <label className="block font-[400] text-[16px] text-gray-700 mb-2">
+                        <label className="block font-[400] text-[16px] text-[#6B7280] mb-2">
                           Email Address
                         </label>
                         <input
@@ -168,8 +172,8 @@ const Contact = () => {
                       </div>
 
                       <div>
-                        <label className="block font-[400] text-[16px] text-gray-700 mb-2">
-                          Company
+                        <label className="block font-[400] text-[16px] text-[#6B7280] mb-2">
+                          Company (optional)
                         </label>
                         <input
                           type="text"
@@ -177,13 +181,13 @@ const Contact = () => {
                           value={formData.company}
                           onChange={handleInputChange}
                           className="w-full px-3 py-2 placeholder:font-[200] placeholder:text-[16px] border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime focus:border-lime outline-none transition-all duration-200 bg-gray-50 focus:bg-white"
-                          placeholder="Your company name (optional)"
+                          placeholder="Your company name"
                         />
                       </div>
 
                       <div>
-                        <label className="block font-[400] text-[16px] text-gray-700 mb-2">
-                          Anything you'd like us to know?
+                        <label className="block font-[400] text-[16px] text-[#6B7280] mb-2">
+                          Anything you'd like us to know? (optional)
                         </label>
                         <textarea
                           name="message"
@@ -191,20 +195,14 @@ const Contact = () => {
                           onChange={handleInputChange}
                           rows="4"
                           className="w-full px-3 py-2 placeholder:font-[200] placeholder:text-[16px] border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime focus:border-lime outline-none transition-all duration-200 resize-none bg-gray-50 focus:bg-white"
-                          placeholder="How do you plan to use our creator marketing platform? (optional)"
+                          placeholder="How do you plan to use our creator marketing platform?"
                         />
                       </div>
 
                       <button
                         type="submit"
                         disabled={isLoading}
-                        className="w-full text-white font-[200] text-[16px] py-2 px-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
-                        style={{
-                          backgroundImage: 'url("https://i.ibb.co/YBvyZtVL/bg3.png")',
-                          backgroundSize: 'cover',
-                          backgroundPosition: 'center',
-                          backgroundRepeat: 'no-repeat'
-                        }}
+                        className="w-full text-white bg-black font-[200] text-[16px] py-2 px-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                       >
                         {isLoading ? (
                           <div className="flex items-center justify-center">
@@ -224,7 +222,7 @@ const Contact = () => {
                 ) : (
                   <div className="flex items-center justify-center h-full">
                     <div className="text-center py-8">
-                      <div className="w-20 h-20 bg-[#9FD0AC] rounded-full flex items-center justify-center mx-auto mb-6">
+                      <div className="w-20 h-20 bg-[#4A7C00] rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
@@ -237,7 +235,7 @@ const Contact = () => {
                       </p>
                       <button
                         onClick={() => navigate('/')}
-                        className="text-[#9FD0AC] hover:[#8ACCA5] font-medium transition-colors text-lg"
+                        className="text-[#4A7C00] hover:[#8ACCA5] font-medium transition-colors text-lg"
                       >
                         Return to Home
                       </button>
@@ -247,10 +245,10 @@ const Contact = () => {
               </div>
 
               {/* Testimonial/Benefits Section - Right Side */}
-              <div className="flex-1 bg-cover rounded-2xl bg-center bg-no-repeat p-8 lg:p-12 text-white flex flex-col justify-center relative"  style={{backgroundImage: 'url("https://i.ibb.co/GLzchp4/bg1.png")'}}>
+              <div className="flex-1 custom-green-gradient rounded-2xl p-8 lg:p-12 text-white flex flex-col justify-center relative" >
                 <div className="space-y-8">
                   {/* Testimonial Card */}
-                  <div className="rounded-xl shadow-lg text-gray-800 max-w-sm mx-auto relative overflow-hidden" style={{ minHeight: '400px' }}>
+                  <div className="rounded-xl bg-white shadow-lg text-gray-800 max-w-sm mx-auto relative overflow-hidden" style={{ minHeight: '400px' }}>
                     {testimonials.map((testimonial, index) => (
                       <div
                         key={index}
@@ -263,7 +261,7 @@ const Contact = () => {
                         }`}
                       >
                         <div className="mb-6">
-                          <svg className="w-8 h-8 text-orange-400 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-8 h-8 text-[#4A7C00] mb-4" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                           </svg>
                           <p className="text-gray-600 italic leading-relaxed mb-6" style={{ minHeight: '120px' }}>
