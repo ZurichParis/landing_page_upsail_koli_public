@@ -29,9 +29,9 @@ const Hero = () => {
             </button>
           </div>
           <div className="flex justify-center mt-10">
-          <div className="w-full max-w-5xl min-h-[60vh] bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
+          <div className="w-full max-w-5xl aspect-video bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
             <video 
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full object-contain rounded-2xl"
               controls
               autoPlay
               muted
