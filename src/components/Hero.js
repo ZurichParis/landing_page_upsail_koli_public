@@ -17,7 +17,8 @@ const Hero = () => {
               The AI vibe marketer < br/> for creator collabs.
               </h1>
               <p className="font-medium text-[16px] md:text-[20px] leading-[22px] md:leading-[28px] text-gray-600 mx-auto max-w-4xl px-4">
-              Koli AI agents do the grind of creator marketing, so founders and marketing leaders can focus on driving growth with confidence. Join the waitlist for early access.
+              Koli AI agents automate creator marketing ops from creative brief and creator search to outreach and campaign management, so founders and marketing leaders can drive growth without the grind.
+
               </p>
             </div>
             <button
