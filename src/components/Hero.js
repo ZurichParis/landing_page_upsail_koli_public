@@ -13,13 +13,13 @@ const Hero = () => {
                 <div className="bg-black text-white rounded-full px-4 py-2">New</div>
                 <div className="bg-transparent px-2 py-2">Creator-first growth engine</div>
               </div>
-              <h1 className="font-medium text-[32px] md:text-[64px] leading-[38px] md:leading-[75px] text-gentle-black mb-6">
+              <div className="font-medium text-[32px] md:text-[64px] leading-[38px] md:leading-[75px] text-gentle-black mb-6">
               The AI vibe marketer < br/> for creator collabs.
-              </h1>
-              <p className="font-medium text-[16px] md:text-[20px] leading-[22px] md:leading-[28px] text-gray-600 mx-auto max-w-4xl px-4">
+              </div>
+              <h1 className="font-medium text-[16px] md:text-[20px] leading-[22px] md:leading-[28px] text-gray-600 mx-auto max-w-4xl px-4">
               Koli AI agents automate creator marketing ops from creative brief and creator search to outreach and campaign management, so founders and marketing leaders can drive growth without the grind.
 
-              </p>
+              </h1>
             </div>
             <button
               onClick={() => navigate('/contact')}
