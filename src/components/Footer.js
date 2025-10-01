@@ -1,33 +1,38 @@
 import React from 'react';
-
-// const links = [
-//   {
-//     label: 'LinkedIn',
-//     href: 'https://www.linkedin.com/company/upsail-ai/'
-//   },
-//   {
-//     label: 'Instagram',
-//     href: 'https://www.instagram.com/upsail.ai/'
-//   },
-//   {
-//     label: 'X',
-//     href: 'https://x.com/upsail_ai'
-//   },
-//   {
-//     label: 'TikTok',
-//     href: 'https://www.tiktok.com/@upsail.ai'
-//   },
-//   {
-//     label: 'YouTube',
-//     href: 'https://www.youtube.com/@upsail.ai'
-//   },
-//   {
-//     label: 'Privacy Policy',
-//     href: 'https://www.upsail.ai/privacy'
-//   },
-// ]
-
+import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
+
+const links = [
+   {
+    label: 'LinkedIn',
+    icon: 'mdi:linkedin',
+    href: 'https://www.linkedin.com/company/getkoli/about/?viewAsMember=true'
+  },
+  {
+    label: 'Instagram',
+    icon: 'mdi:instagram',
+    href: 'https://www.instagram.com/koli_hq/'
+  },
+//  {
+//    label: 'X',
+//    icon: 'mdi:x',
+//    href: 'https://x.com/upsail_ai'
+//  },
+//  {
+//    label: 'TikTok',
+//    icon: 'ic:baseline-tiktok',
+//    href: 'https://www.tiktok.com/@upsail.ai'
+//  },
+  {
+    label: 'YouTube',
+    icon: 'mdi:youtube',
+    href: 'https://www.youtube.com/@Koli_hq'
+  },
+//  {
+//    label: 'Privacy Policy',
+//    href: 'https://www.upsail.ai/privacy'
+//  },
+]
 
 const Footer = () => {
   return (
@@ -37,11 +42,21 @@ const Footer = () => {
           <div className="text-2xl font-bold text-gentle-black">
             Koli - The AI Vibe Marketer
           </div>
+          
+          <div className="flex space-x-8">
+            {links.map((link) => (
+              <div key={link.label} className="text-gray-600 hover:text-gentle-black transition-colors bg-gray-100 rounded-full p-2">
+                <a href={link.href}>
+                  <Icon icon={link.icon} className="w-6 h-6" />
+                </a>
+              </div>
+            ))}
+          </div>
 
           <div className="flex space-x-8">
             <Link
               to="/contact"
-              className="text-gray-600 hover:text-gentle-black transition-colors"
+              className="text-gray-600 hover:text-gentle-black transition-colors bg-gray-100 rounded-full p-2 px-4"
             >
               Contact Us
             </Link>

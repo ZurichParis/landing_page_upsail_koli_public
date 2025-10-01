@@ -5,12 +5,14 @@ import Solution from './Solution';
 import Testimonials from './Testimonials';
 import HowItWorks from './HowItWorks';
 import FinalCTA from './FinalCTA';
+import Interview from './Interview';
 
 const Home = () => {
   return (
     <main>
       <Hero />
       <Problem />
+      <Interview />
       <Solution />
       <Testimonials />
       <HowItWorks />
