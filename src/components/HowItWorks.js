@@ -25,9 +25,9 @@ const HowItWorks = () => {
       )
     },
     {
-      title: "2. Select Creators Ready to Collaborate",
-      shortDesc: "Skip search and outreach, find creators already ready to collaborate with you.",
-      fullDesc: "Come back to a shortlist of creators, already vetted and negotiated at transparent prices. Chat with Emily to analyze and compare candidates ready to collaborate. No more juggling emails, DMs, search tools, CRMs, and spreadsheets, and losing track along the way. Need a quick answer on a creator? Just ask Emily.",
+      title: "2. Activate Creators",
+      shortDesc: "Skip search and outreach, activate creators ready to collaborate with you.",
+      fullDesc: "Come back to a shortlist of creators, vetted and negotiated at transparent prices. No more juggling emails, DMs, search tools, CRMs, and spreadsheets. Need a quick answer on a creator? Just ask Emily.",
       illustration: (
         <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
           <img 
@@ -48,7 +48,7 @@ const HowItWorks = () => {
     {
       title: "3. Scale Performance",
       shortDesc: "Take going viral from luck to repeatable success.",
-      fullDesc: "No more missing signals when it’s too late. Emily gives you real insights from creator content and engagement, curates the next cohort of top-performing creators, and builds viral content templates to multiply your reach.",
+      fullDesc: "No more missing signals. Emily gives you real insights from creator content and engagement, curates the next cohort of top-performing creators and replicates the viral content.",
       illustration: (
         <div className="w-full h-full rounded-xl overflow-hidden bg-gray-100">
           <img 

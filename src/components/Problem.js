@@ -33,8 +33,7 @@ const Problem = () => {
 
   // Problem text with two distinct paragraphs
   const problemParagraphs = [
-    "Creator marketing drives viral growth, but it's a grind — endless searching for the right creators, chasing content, and tracking performance.",
-    "Koli flips the script. AI agents handle everything from creative direction and creator sourcing to outreach and campaign management, so you can launch faster, scale smarter, and see results — all without adding headcount."
+    "Creators are rewriting the growth playbook. Slow execution means missed momentum and lost revenue. Koli turns chaos into a repeatable growth engine, giving your team the speed and scale it needs to win."
   ];
 
   // Split each paragraph into words and combine with paragraph info
@@ -53,7 +52,7 @@ const Problem = () => {
   // Define words to highlight with specific colors
   const highlightWords = {
     'Koli': '#79B939', // bright blue
-    'growth': '#A3E635', // emerald green  
+    'growth': '#35A3E6', // emerald green  
     'scale': '#E635A3', // emerald green
     'viral': '#35A3E6', // cyan
     'AI': '#79B939', // blue
