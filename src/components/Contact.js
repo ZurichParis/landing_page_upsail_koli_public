@@ -127,7 +127,7 @@ const Contact = () => {
                   <>
                     <div className="mb-3">
                       <p className="font-[700] text-[18px] text-[#4A7C00]">
-                        Join waitlist
+                      Apply to join Koli private beta
                       </p>
                       <p className="text-[#0A0A0A] font-[500] text-[26px] py-4">
                         Be among the first to hire the vibe creator marketer.
